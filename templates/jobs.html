@@ -1,0 +1,25 @@
+
+<div class ="border-bottom row">
+    <div class = "col-9">
+
+        <div class="border border-success p-2 mb-2 rounded-4" style="--bs-border-opacity: .3;">
+            <div style = "margin-bottom:4px;margin-top:16px ">
+                <h4 style="color:rgb(120,120,120);margin-bottom:4px;">{{x['title']}}</h4>
+            </div> <!-- for title-->
+
+            <div style = "margin-bottom:4px;">
+                <b>location:</b> <i>{{x['loc']}}</i>
+            </div> <!-- for location-->
+
+                {% if x['sal'] %}
+                <div style = "margin-bottom:4px;">
+                    <b>Salary:</b> <i>{{x['sal']}}</i>
+                </div> <!-- for location-->
+                {%endif%}
+        </div>
+    </div>
+
+    <div class = "col-3" align="middle">
+        <button align = "center" type="button" class="btn btn-primary">Apply <strong>Now</strong></button>
+    </div>
+</div>
