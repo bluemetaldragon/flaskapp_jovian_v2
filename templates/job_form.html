@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% include 'bootstrap.html' %}
+</head>
+<form action='/api/jobs/{{job[0].id}}/apply' method='post'>
+    <h1> Submit Application Form:</h1><br>
+    
+    <div class = 'mb-2'>
+        <label> full name </label><br>
+        <input type = "text" name = "full_name" placeholder="your name"><br>
+    </div>
+
+    <div class = 'mb-2'>
+        <label> email</label><br>
+        <input = "text" name = "email_add" placeholder = "type your email here"><br>
+    </div>
+
+    <div class = 'mb-2'>
+        <label> LinkedIn URL </label><br>
+        <input type = "text" name = "url" placeholder ="enter your linkedin profile url here"><br>
+    </div>
+
+    <input type = 'submit'>
+    </form>

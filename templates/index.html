@@ -6,18 +6,7 @@
     </title>    
 
     <!-- adding CSS bootstrap handlers-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
-    <style>
-      #banner{
-      height: 360px;
-      object-fit:cover;
-      width:100%
-      }
-    </style>
-    
+    {% include 'bootstrap.html' %}
   </head>
 
   <!-- ENTERING THE BODY-->
@@ -35,7 +24,15 @@
         <div class = 'container-sm'>
           <h2> About Jovian</h2>
           <p>
-            We offer industry-focused courses and programs that help you learn technical skills, build real-world projects, and advance your career.We offer industry-focused courses and programs that help you learn technical skills, build real-world projects, and advance your career.We offer industry-focused courses and programs that help you learn technical skills, build real-world projects, and advance your career.We offer industry-focused courses and programs that help you learn technical skills, build real-world projects, and advance your career.
+            <ul>
+              <li>
+                We offer industry-focused courses and programs that help you learn technical skills, build real-world projects, and advance your career.
+              </li>
+              <li>
+                We offer industry-focused courses and programs that help you learn technical skills, build real-world projects, and advance your career.
+              </li>
+            </ul>
+            We offer industry-focused courses and programs that help you learn technical skills, build real-world projects, and advance your career.We offer industry-focused courses and programs that help you learn technical skills, build real-world projects, and advance your career.
           </p>
         </div>
 
@@ -46,7 +43,7 @@
             <p>
             {% for x in jobs%}
                 <!--added a placeholder to call a different file jobs.html-->
-                {% include 'jobs.html' %}
+                {% include 'jobs_list.html' %}
 
             {% endfor %}
             </p>
