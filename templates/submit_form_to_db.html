@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+      Careers
+    </title>    
+
+    <!-- adding CSS bootstrap handlers-->
+    {% include 'bootstrap.html' %}
+  </head>
+<body>
+    The data submitted is:<br> 
+    Full Name: {{app_data.full_name}}
+    email: {{app_data.email}}
+    Linkedin url: {{app_data.url}}
+
+    {{status}} Submitted for Job Id: {{job[0].id}}
+</body>
